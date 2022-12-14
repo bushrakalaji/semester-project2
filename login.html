@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+
+    <title>Login</title>
+  </head>
+  <body class="bg-primary">
+    <main>
+      <img
+        src="/images/StockSnap_IGHTJ9DY5E.jpg"
+        alt=""
+        srcset=""
+        class="theme-img border border-dark theme-image"
+      />
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 text-primary">
+        <div class="row g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="text-uppercase fs-1 display-4 lh-1 mb-3">
+              <span class="text-success">Login</span>
+            </div>
+
+            <div class="text-uppercase fs-1">
+              <span class="text-secondary">and join us</span>
+              <span class="text-light">NOW!!</span>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form
+              class="p-4 p-md-5 border rounded-3 bg-light"
+              id="registerForm"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                  required
+                  title="only @(stud.)noroff.no domains are allowd to register."
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  required
+                  minlength="8"
+                />
+                <label for="floatingInput">Password</label>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+              </div>
+              <button
+                class="w-100 btn btn-lg btn-outline-primary rounded-pill"
+                type="submit"
+              >
+                Login
+              </button>
+              <div class="border-bottom border-top text-center m-2">OR</div>
+              <div class="d-flex gap-3">
+                <a
+                  href="index.html"
+                  class="w-100 btn btn-lg btn-outline-primary rounded-pill"
+                >
+                  Cansel
+                </a>
+                <button
+                  class="w-100 btn btn-lg btn-outline-primary rounded-pill"
+                  type="submit"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+
+    <title>Update Listing</title>
+  </head>
+  <body class="bg-primary">
+    <main>
+      <img
+        src="/images/StockSnap_IGHTJ9DY5E.jpg"
+        alt=""
+        srcset=""
+        class="theme-img border border-dark theme-image"
+      />
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5 text-primary">
+        <div class="row g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="text-uppercase fs-1 display-4 lh-1 mb-3">
+              <span class="text-success">Update Listing</span>
+            </div>
+
+            <div class="text-uppercase fs-1">
+              <span class="text-secondary">and join us</span>
+              <span class="text-light">NOW!!</span>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form
+              class="p-4 p-md-5 border rounded-3 bg-light"
+              id="registerForm"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="Title"
+                  class="form-control"
+                  pattern="^[\w]+$"
+                  required
+                  title="User name must only contain lower case and upper case letters, numbers and underscore (_). Example:My_user123"
+                />
+                <label for="floatingInput">Title</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  name="body"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  required
+                ></textarea>
+                <label for="floatingInput">Body</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" name="tags" class="form-control" />
+                <label for="floatingInput">Tags</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="url" name="media" class="form-control" />
+                <label for="floatingInput">Media</label>
+              </div>
+              <div class="d-flex gap-3">
+                <a class="w-100 btn btn-lg btn-outline-primary rounded-pill">
+                  Cansel
+                </a>
+                <button
+                  class="w-100 btn btn-lg btn-outline-primary rounded-pill"
+                  type="submit"
+                >
+                  Update
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

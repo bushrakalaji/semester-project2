@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/styles.css" />
 
-    <title>Home Page</title>
+    <title>Profile</title>
   </head>
   <body>
     <div>
@@ -66,7 +66,7 @@
               pb-1
             "
           >
-            Login
+            Home
           </button>
           <button
             type="button"
@@ -80,7 +80,7 @@
               pb-1
             "
           >
-            Register
+            Logout
           </button>
         </div>
       </header>
@@ -89,128 +89,96 @@
       ></div>
     </div>
     <main>
+      <div class="bg-primary text-light p-2">
+        <span class="ms-2">Home |</span>
+        <span class="text-secondary">Profile</span>
+      </div>
       <img
         src="/images/StockSnap_IGHTJ9DY5E.jpg"
         alt=""
         srcset=""
-        class="theme-img border border-dark"
+        class="theme-img border border-dark theme-image"
       />
-      <section class="bg-primary text-light">
+      <div class="bg-primary p-4">
         <div
           class="
             d-flex
-            text-start
-            align-items-start
-            flex-column
-            mx-auto
-            home-txt
-            pt-5
-            pb-5
-            gap-3
+            align-items-center
+            gap-5
+            flex-wrap
+            justify-content-center
           "
         >
-          <div class="text-uppercase fs-1">
-            <span class="text-secondary">start an auction or</span>
-            <span class="text-success">win</span>
-            <span class="text-secondary">a bid</span>
+          <div class="profile-img text-light position-relative rounded-circle">
+            <img
+              src="images/IMG_7694.PNG"
+              alt=""
+              class="prfl-img border border-light rounded-circle"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="
+                bi bi-pencil-square
+                position-absolute
+                top-50
+                start-100
+                translate-middle
+                bg-primary
+              "
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+              />
+            </svg>
           </div>
-
-          <h1 class="text-uppercase fs-3">Welcome to Art-Part</h1>
-          <div class="text-uppercase fs-4">
-            <span>Create an account now and </span>
-            <span class="text-success">GET</span>
-            <span class="text-secondary">1000 coins </span>
-            <span>as a gift to start your bids.</span>
+          <div class="text-light fs-3">
+            <span>Name</span>
+            <div>
+              <span>yourcredit</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-coin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
+                />
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center p-5 b-shadoww">
+        <div class="d-flex justify-content-center p-5 b-shadoww mt-5">
           <button
             class="btn btn-outline-primary rounded-pill ps-4 pe-4 pt-2 pb-2"
             type="button"
           >
-            Register NOW!
+            Create listing
           </button>
         </div>
-      </section>
-
-      <div class="d-flex justify-content-md-between momy text-light mt-2">
-        <div class="look position-relative">
-          <span class="position-absolute top-50 start-50 translate-middle fs-1"
-            >LOOK</span
-          >
-          <img src="/images/IMG_7722 ٢.JPG" alt="" class="style-img" />
-        </div>
-        <div class="adore position-relative">
-          <span class="position-absolute top-50 start-50 translate-middle fs-1"
-            >ADORE
-          </span>
-          <img src="/images/IMG_7723.JPG" alt="" class="style-img" />
-        </div>
-        <div class="merge position-relative">
-          <span class="position-absolute top-50 start-50 translate-middle fs-1"
-            >MERGE
-          </span>
-          <img src="/images/IMG_7918.jpeg" alt="" class="style-img" />
-        </div>
       </div>
-      <div class="d-flex flex-column text-center">
-        <span class="fs-1 fw-light p-2">Then</span>
-        <div class="fs-1 text-light bg-primary fw-light p-3">
-          Choose your masterpiece
-        </div>
+
+      <div class="fs-1 text-light bg-primary fw-light p-3 text-center mt-3">
+        My listing
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
-        <div class="col">
-          <div
-            class="
-              card
-              bg-primary
-              text-light
-              rounded-0
-              border-primary
-              shadow
-              crd-shdw
-            "
-          >
-            <img
-              src="images/IMG_7722 ٢.JPG"
-              class="card-img-top crd-img-hover"
-              alt="..."
-            />
-            <div
-              class="card-body d-flex justify-content-between position-relative"
-            >
-              <h5 class="card-title mb-0">Card title</h5>
-              <button
-                type="button"
-                class="
-                  btn btn-outline-primary
-                  me-2
-                  rounded-pill
-                  ps-3
-                  pe-3
-                  pt-1
-                  pb-1
-                "
-              >
-                Go Now!
-              </button>
-              <span
-                class="
-                  position-absolute
-                  bottom-100
-                  start-0
-                  bg-primary
-                  text-secondary
-                  rounded-top
-                  p-2
-                "
-                >Ends At : 18-12-2022 11:58 PM</span
-              >
-            </div>
-          </div>
-        </div>
         <div class="col">
           <div class="card bg-primary text-light rounded-0 shadow-lg crd-shdw">
             <img
