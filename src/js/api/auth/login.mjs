@@ -1,4 +1,5 @@
 import { API_AUCTION_URL } from "../constans.mjs";
+import * as storage from "../../storage/index.mjs";
 
 const action = "/auth/login";
 const method = "post";
@@ -13,6 +14,9 @@ export async function login(profile) {
     method,
     body,
   });
-  const result = await response.json();
-  return result;
+  const { accessToken, ...user } = await response.json();
+
+  storage.save("token", accessToken);
+  storage.save("profile", user);
+  alert("you are now logged in");
 }
