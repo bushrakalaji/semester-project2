@@ -32,29 +32,26 @@
           <div class="col-md-10 mx-auto col-lg-5">
             <form
               class="p-4 p-md-5 border rounded-3 bg-light"
-              id="registerForm"
+              id="updateListing"
             >
               <div class="form-floating mb-3">
                 <input
                   type="text"
-                  name="Title"
+                  name="title"
                   class="form-control"
-                  pattern="^[\w]+$"
-                  required
                   title="User name must only contain lower case and upper case letters, numbers and underscore (_). Example:My_user123"
                 />
                 <label for="floatingInput">Title</label>
               </div>
               <div class="form-floating mb-3">
                 <textarea
-                  name="body"
+                  name="description"
                   id=""
                   cols="30"
                   rows="10"
                   class="form-control"
-                  required
                 ></textarea>
-                <label for="floatingInput">Body</label>
+                <label for="floatingInput">Description</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="text" name="tags" class="form-control" />
@@ -64,6 +61,7 @@
                 <input type="url" name="media" class="form-control" />
                 <label for="floatingInput">Media</label>
               </div>
+
               <div class="d-flex gap-3">
                 <a class="w-100 btn btn-lg btn-outline-primary rounded-pill">
                   Cansel
@@ -80,5 +78,6 @@
         </div>
       </div>
     </main>
+    <script src="/src/js/index.mjs" type="module"></script>
   </body>
 </html>
