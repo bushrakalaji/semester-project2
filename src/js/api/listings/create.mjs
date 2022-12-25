@@ -3,7 +3,10 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/listings";
 const method = "post";
-
+/**
+ * This function send the (crearte listing) form to the API and receives the Respons.
+ *
+ */
 export async function createListing(listingData) {
   listingData.tags = listingData.tags.split(" ");
   listingData.media = listingData.media.split(" ");

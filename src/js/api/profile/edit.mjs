@@ -3,7 +3,9 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/profiles";
 const method = "put";
-
+/**
+ * make a PUT request to the API to update the Avatar with the specified name
+ */
 export async function updateAvatar(profileData) {
   if (!profileData.name) {
     throw new Error("Update requires a listing ID");
