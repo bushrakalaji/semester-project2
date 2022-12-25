@@ -10,8 +10,6 @@ export async function myProfile() {
   const { name } = load("profile");
   const profileData = await getProfile(name);
   const profileImage = profileData.avatar;
-
-  console.log(profileImage);
   profileData.name = name;
 
   let userAvatar = ` 

@@ -16,7 +16,6 @@ export async function searchFonction() {
       const filteredResult = listings.filter(({ title }) => {
         return title.toLowerCase().includes(inputValue);
       });
-      console.log(filteredResult);
 
       container.innerHTML = "";
       filteredResult.forEach(function (filterdListings) {

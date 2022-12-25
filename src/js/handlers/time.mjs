@@ -17,5 +17,3 @@ minutes = ("0" + minutes).slice(-2); // Add leading 0 if needed
  */
 export var mydateString =
   month + "/" + day + "/" + year + ", " + hours + ":" + minutes + " " + ampm;
-
-console.log(mydateString); // Outputs "12/06/2022, 11:22 AM"

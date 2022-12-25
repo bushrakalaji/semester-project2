@@ -19,8 +19,6 @@ export async function setUpdateAvatar() {
 
     form.avatar.value = profile.avatar;
 
-    console.log(profile);
-
     button.disabled = false;
 
     form.addEventListener("submit", (event) => {

@@ -20,7 +20,6 @@ export async function setUpdateFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries());
-      console.log(listing);
       listing.id = id;
       // Send it to API
       updateListing(listing);

@@ -10,7 +10,6 @@ export async function myProfileListings() {
   const profileContainer = document.querySelector(".profileListing");
   const { name } = load("profile");
   const profileData = await getMyProfile(name);
-  console.log(profileData);
   profileData.name = name;
 
   try {

@@ -18,7 +18,6 @@ export async function listingBid(id, amount) {
     body: JSON.stringify({ amount: Number(amount) }),
   });
   const result = await response.json();
-  console.log(result);
   if (response.ok) {
     window.location.reload();
     return result;

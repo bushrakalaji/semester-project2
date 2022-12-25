@@ -14,8 +14,6 @@ export async function bidFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const bidData = Object.fromEntries(formData.entries());
-
-      console.log(Number(bidData.amount));
       bidData.id = id;
       //   Send it to API
       listingBid(id, Number(bidData.amount));

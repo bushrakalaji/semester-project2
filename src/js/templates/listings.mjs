@@ -16,7 +16,6 @@ export async function listingsTemplate() {
   const loggedIn = load("token");
   try {
     const listings = await listingsData.getListings();
-    console.log(listings);
     container.innerHTML += "";
     listings.forEach(function (listing) {
       const dateObject = new Date(listing.endsAt);

@@ -22,12 +22,9 @@ export async function listingById() {
     const singleResult = await response.json();
     const chekBid = singleResult.bids.length;
     const profileImg = singleResult.seller.avatar;
-    console.log(singleResult.bids.length);
     const seller = singleResult.seller.email;
-    console.log(seller);
     const profile = load("profile");
     const currentAuther = profile.email;
-    console.log(currentAuther);
     const dateObject = new Date(singleResult.endsAt);
     const dateString = dateObject.toLocaleString("en-US", {
       month: "2-digit",
@@ -37,7 +34,6 @@ export async function listingById() {
       minute: "2-digit",
       hour12: true,
     });
-    console.log(singleResult);
 
     let profileImage = `
     <img

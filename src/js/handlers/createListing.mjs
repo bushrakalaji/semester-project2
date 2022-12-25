@@ -11,7 +11,6 @@ export function setCreateFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries());
-      console.log(listing);
 
       // Send it to API
       createListing(listing);

@@ -19,8 +19,6 @@ export async function veiwlistingById() {
     const singleResult = await response.json();
     const chekBid = singleResult.bids.length;
     const profileImg = singleResult.seller.avatar;
-    const seller = singleResult.seller.email;
-    console.log(seller);
     const dateObject = new Date(singleResult.endsAt);
     const dateString = dateObject.toLocaleString("en-US", {
       month: "2-digit",
@@ -67,7 +65,6 @@ export async function veiwlistingById() {
     </svg> ${dateString}`;
     }
 
-    console.log(singleResult);
     let image = `<img src="https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg
       "class="card-img-top crd-img-hover "
       id ="hei"
@@ -146,7 +143,5 @@ export async function veiwlistingById() {
         `;
     }
     veiwCrumbs();
-  } catch {
-    console.log("error");
-  }
+  } catch {}
 }

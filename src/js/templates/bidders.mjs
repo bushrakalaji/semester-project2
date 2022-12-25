@@ -14,7 +14,6 @@ export async function biddersList() {
     const response = await authFetch(singleUrl);
     const singleResult = await response.json();
     const biddersArray = singleResult.bids;
-    console.log(biddersArray);
 
     bidders.innerHTML = "";
     biddersArray.forEach(function (bid) {
