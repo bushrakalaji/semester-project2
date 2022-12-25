@@ -39,14 +39,14 @@ export async function searchFonction() {
         }
 
         let image = `<img src="https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg
-      "class="card-img-top crd-img-hover prfl-img"
+      "class="card-img-top crd-img-hover imgSize"
       alt="${filterdListings.title}"/> `;
 
         if (filterdListings.media[0]) {
           image = `<img
         src="${filterdListings.media}"
         onerror = "src='https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg'"
-        class="card-img-top crd-img-hover "
+        class="card-img-top crd-img-hover imgSize"
         alt="${filterdListings.title}"
       />`;
         }
@@ -57,7 +57,7 @@ export async function searchFonction() {
       <div
         class="card bg-primary text-light rounded-0 border-primary shadow crd-shdw"
       >
-      <div class="imgSize"> ${image} </div>
+      <div class="imgDiv"> ${image} </div>
         <div
             class="card-body d-flex justify-content-between position-relative"
             >
