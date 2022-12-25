@@ -10,18 +10,19 @@ export async function myProfile() {
   console.log(profileData);
   profileData.name = name;
 
-  let userAvatar = `<img
-  src="https://i.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
-  alt="${profileData.name}"
-  class="prfl-img border border-light rounded-circle"
-  />`;
-  if (profileData.avatar) {
-    `
+  let userAvatar = ` 
     <img
         src="${profileData.avatar}"
         alt="${profileData.name}"
         class="prfl-img border border-light rounded-circle"
         />`;
+
+  if (!profileData.avatar) {
+    `<img
+  src="https://i.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
+  alt="${profileData.name}"
+  class="prfl-img border border-light rounded-circle"
+  />`;
   }
 
   try {
