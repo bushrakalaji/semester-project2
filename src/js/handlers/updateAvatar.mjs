@@ -1,7 +1,9 @@
 import { getListing, updateListing } from "../api/listings/index.mjs";
 import { load } from "../storage/index.mjs";
 import { getProfile, updateAvatar } from "../api/profile/index.mjs";
-
+/**
+ * This function attaches an event listener to a form element that sends the form data and the name and email of the logged-in user to the updateAvatar function when a form submission event is triggered. Before the event listener is attached, the function retrieves the profile data for the logged-in user and fills the form with the name, email, and avatar of the user
+ */
 export async function setUpdateAvatar() {
   const form = document.querySelector("#updateAvatar");
 

@@ -5,7 +5,9 @@ import { mydateString } from "../handlers/time.mjs";
 import { load } from "../storage/index.mjs";
 import { errorHandler } from "../handlers/errorHandler.mjs";
 import { deleteMe } from "../handlers/delete.mjs";
-
+/**
+ * This function displays a specific listing information.
+ */
 export async function listingById() {
   const resultById = document.querySelector(".listingID");
   const postBreadCrumbs = document.querySelector(".postBreadCrumbs");
@@ -54,16 +56,13 @@ export async function listingById() {
     `;
     }
 
+    // sort the array in descending order by created date
     let sortBids = singleResult.bids;
     sortBids.sort((b, a) => {
-      // sort the array in descending order by created date
       return new Date(b.created) - new Date(a.created);
     });
-
     const lastItem = sortBids[sortBids.length - 1];
-
     let lastBid = `No bids yet`;
-
     if (sortBids.length > 0) {
       lastBid = `${lastItem.amount}`;
     }
@@ -80,6 +79,8 @@ export async function listingById() {
     </svg> ${dateString}`;
     }
 
+    // sets the src and alt attributes of an image element based on the media property of the singleResult object
+
     let image = `<img src="https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg
       "class="card-img-top  rounded border  border-dark"
       id ="hei"
@@ -95,6 +96,10 @@ export async function listingById() {
       />`;
     }
 
+    /**
+     *
+     * This function displays a specific listing created by the currently logged in user.
+     */
     function myPosts() {
       resultById.innerHTML += `<div class="row container gap-5 mt-2 text-light">
   <div class="col-sm-4 p-0 1 listing-img">${image}</div>
@@ -236,7 +241,9 @@ export async function listingById() {
       </div>
   </div>`;
     }
-
+    /**
+     * This function adds a link to the postBreadCrumbs element with the text being the title of the current listing
+     */
     function postCrumbs() {
       postBreadCrumbs.innerHTML += `
       <a href="" class="text-secondary">${singleResult.title}</a>

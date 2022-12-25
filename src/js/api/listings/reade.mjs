@@ -3,12 +3,19 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/listings";
 const myTag = "?_tag=art";
+/**
+ * This function fetches a listings from the API using its "tag" and returns the result.
+ *
+ */
 export async function getListings() {
   const getListingsURL = `${API_AUCTION_URL}${action}${myTag}`;
   const response = await authFetch(getListingsURL);
   return await response.json();
 }
-
+/**
+ * This function fetches a listing from the API using its ID and returns the result.
+ *
+ */
 export async function getListing(id) {
   if (!id) {
     throw new Error("Get listing requires a listing ID");

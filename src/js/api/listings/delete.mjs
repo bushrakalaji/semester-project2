@@ -3,7 +3,10 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/listings";
 const method = "delete";
-
+/**
+ * This function delete the listing id form to the API and receives nothing.
+ *
+ */
 export async function deleteListing(id) {
   if (!id) {
     throw new Error("Delete requires a listing ID");

@@ -3,7 +3,10 @@ import * as storage from "../../storage/index.mjs";
 
 const action = "/auth/login";
 const method = "post";
-
+/**
+ * This function sends the information to the API, receives the Response, and saves it to local storage
+ *
+ */
 export async function login(profile) {
   const loginURL = API_AUCTION_URL + action;
   const body = JSON.stringify(profile);

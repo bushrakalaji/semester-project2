@@ -4,7 +4,10 @@ import { API_AUCTION_URL } from "../constans.mjs";
 const action = "/listings";
 const bids = "bids";
 const method = "post";
-
+/**
+ * This function sends the bid amount to the API and receives the Respons.
+ *
+ */
 export async function listingBid(id, amount) {
   const displayError = document.querySelector("#liveAlertPlaceholder");
 

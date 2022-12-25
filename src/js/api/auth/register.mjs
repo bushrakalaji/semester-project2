@@ -2,7 +2,10 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/auth/register";
 const method = "post";
-
+/**
+ * This function make new account and send the information to the API.
+ *
+ */
 export async function register(profile) {
   const registerURL = API_AUCTION_URL + action;
   const body = JSON.stringify(profile);

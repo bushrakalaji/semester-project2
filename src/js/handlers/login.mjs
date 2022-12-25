@@ -1,5 +1,7 @@
 import { login } from "../api/auth/login.mjs";
-
+/**
+ * This function attaches an event listener to a "loginForm" form  that sends the form data to the login function when a form submission event is triggered.
+ */
 export function setLoginFormListener() {
   const form = document.querySelector("#loginForm");
 

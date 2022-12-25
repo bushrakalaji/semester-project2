@@ -2,7 +2,9 @@ import { getProfile } from "../api/profile/index.mjs";
 import { load } from "../storage/index.mjs";
 import { errorHandler } from "../handlers/errorHandler.mjs";
 import { profileErrorHandler } from "../handlers/errorHandler.mjs";
-
+/**
+ * This function is used to retrieve the profile information of the logged in user and display it on the "myProfile" container element in the DOM.
+ */
 export async function myProfile() {
   const profileContainer = document.querySelector(".myProfile");
   const { name } = load("profile");

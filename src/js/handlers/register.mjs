@@ -1,5 +1,7 @@
 import { register } from "../api/auth/register.mjs";
-
+/**
+ * This function attaches an event listener to a register button that sends the form data to the register function when a form submission event is triggered.
+ */
 export function setRegisterFormListener() {
   const form = document.querySelector("#registerForm");
 

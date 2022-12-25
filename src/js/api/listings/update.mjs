@@ -3,7 +3,9 @@ import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/listings";
 const method = "put";
-
+/**
+ * make a PUT request to the API to update the listing with the specified ID
+ */
 export async function updateListing(listingData) {
   if (!listingData.id) {
     throw new Error("Update requires a listing ID");

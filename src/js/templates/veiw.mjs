@@ -3,7 +3,9 @@ import { authFetch } from "../api/authFetch.mjs";
 import { bidFormListener } from "../handlers/bid.mjs";
 import { mydateString } from "../handlers/time.mjs";
 import { load } from "../storage/index.mjs";
-
+/**
+ * This function displays a specific listing information for unregisterd users.
+ */
 export async function veiwlistingById() {
   const resultById = document.querySelector(".veiwListingID");
   const veiwBreadCrumbs = document.querySelector(".veiwBreadCrumbs");

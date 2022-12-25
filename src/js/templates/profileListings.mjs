@@ -3,7 +3,9 @@ import { load } from "../storage/index.mjs";
 import { errorHandler } from "../handlers/errorHandler.mjs";
 import { profileErrorHandler } from "../handlers/errorHandler.mjs";
 import { mydateString } from "../handlers/time.mjs";
-
+/**
+ * This function retrieves a list of listings created by the logged in user and displays it in the "profileListing" container element in the DOM.
+ */
 export async function myProfileListings() {
   const profileContainer = document.querySelector(".profileListing");
   const { name } = load("profile");

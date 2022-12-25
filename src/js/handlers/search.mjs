@@ -1,7 +1,9 @@
 import * as listingsData from "../api/listings/index.mjs";
 import { mydateString } from "./time.mjs";
 import { load } from "../storage/index.mjs";
-
+/**
+ * This function attaches an event listener to a search bar element that filters a list of listings based on the value of the search bar, generates HTML elements with the filtered results, and inserts them into the DOM when a keyup event is triggered.
+ */
 export async function searchFonction() {
   const container = document.querySelector(".listings");
   try {

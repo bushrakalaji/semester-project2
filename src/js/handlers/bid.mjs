@@ -1,5 +1,7 @@
 import { listingBid } from "../api/listings/index.mjs";
-
+/**
+ * This function attaches an event listener to a form element that sends the form data and the listing ID to the listingBid function when a form submission event is triggered.
+ */
 export async function bidFormListener() {
   const form = document.querySelector("#bidForm");
   const url = new URL(location.href);

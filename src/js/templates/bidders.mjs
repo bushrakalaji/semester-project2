@@ -1,9 +1,8 @@
 import { API_AUCTION_URL } from "../api/constans.mjs";
 import { authFetch } from "../api/authFetch.mjs";
-import { bidFormListener } from "../handlers/bid.mjs";
-import { mydateString } from "../handlers/time.mjs";
-import { load } from "../storage/index.mjs";
-
+/**
+ *  This function displays a list of bidders for a specific listing .
+ */
 export async function biddersList() {
   const bidders = document.querySelector(".bidders");
   try {
