@@ -31,9 +31,9 @@ export async function listingsTemplate() {
 
       // If the user is logged in, the link will be to the page for viewing the listing with the given ID. If the user is not logged in, the link will be to the page for viewing the listing as a guest with the given ID.
 
-      let myLink = `/post/?id=${listing.id}`;
+      let myLink = `/listing/?id=${listing.id}`;
       if (!loggedIn) {
-        myLink = `/post/guest/?id=${listing.id}`;
+        myLink = `/listing/guest/?id=${listing.id}`;
       }
 
       // checks whether the current date and time is less than the date and time when the listing ends.
@@ -119,7 +119,7 @@ export async function listingsTemplate() {
       
     
     <a
-            href="/post/create/"
+            href="/listing/create/"
             class="btn btn-outline-primary rounded-pill ps-4 pe-4 pt-2 pb-2 "
           >
             Create listing

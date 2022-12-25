@@ -17,17 +17,17 @@ if (path === "/profile/login/") {
   setLoginFormListener();
 } else if (path === "/profile/register/") {
   setRegisterFormListener();
-} else if (path === "/post/create/") {
+} else if (path === "/listing/create/") {
   setCreateFormListener();
-} else if (path === "/post/edit/") {
+} else if (path === "/listing/edit/") {
   setUpdateFormListener();
 } else if (path === "/") {
   listingsTemplate();
   searchFonction();
-} else if (path === "/post/") {
+} else if (path === "/listing/") {
   listingById();
   biddersList();
-} else if (path === "/post/guest/") {
+} else if (path === "/listing/guest/") {
   veiwlistingById();
   biddersList();
 } else if (path === "/profile/edit/") {

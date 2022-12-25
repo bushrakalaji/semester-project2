@@ -105,7 +105,7 @@ export async function listingById() {
   <div class="col-sm-4 p-0 1 listing-img">${image}</div>
   <div class="bg-primary text-light col-sm-6 position-relative">
     <div class="position-absolute top-0 start-100 translate-middle d-flex">
-      <a href="/post/edit/?id=${singleResult.id}" class="text-secondary"
+      <a href="/listing/edit/?id=${singleResult.id}" class="text-secondary"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"

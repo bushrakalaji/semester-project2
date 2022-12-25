@@ -30,9 +30,9 @@ export async function searchFonction() {
           hour12: true,
         });
 
-        let myLink = `/post/?id=${filterdListings.id}`;
+        let myLink = `/listing/?id=${filterdListings.id}`;
         if (!loggedIn) {
-          myLink = `/post/guest/?id=${filterdListings.id}`;
+          myLink = `/listing/guest/?id=${filterdListings.id}`;
         }
 
         let myTime = "This listing is ended";

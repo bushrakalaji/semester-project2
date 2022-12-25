@@ -59,7 +59,7 @@ export async function myProfileListings() {
           <h5 class="card-title mb-0 text-uppercase">${listing.title}</h5>
           <div class="goButton">
             <a
-              href="/post/?id=${listing.id}"
+              href="/listing/?id=${listing.id}"
               class="btn btn-outline-primary me-2 rounded-pill ps-3 pe-3 pt-1 pb-1"
             >
               Go Now!
