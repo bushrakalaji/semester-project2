@@ -7,7 +7,9 @@ export async function myProfile() {
   const profileContainer = document.querySelector(".myProfile");
   const { name } = load("profile");
   const profileData = await getProfile(name);
-  console.log(profileData);
+  const profileImage = profileData.avatar;
+
+  console.log(profileImage);
   profileData.name = name;
 
   let userAvatar = ` 
@@ -17,8 +19,8 @@ export async function myProfile() {
         class="prfl-img border border-light rounded-circle"
         />`;
 
-  if (!profileData.avatar) {
-    `<img
+  if (profileImage === null) {
+    userAvatar = `<img
   src="https://i.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
   alt="${profileData.name}"
   class="prfl-img border border-light rounded-circle"
