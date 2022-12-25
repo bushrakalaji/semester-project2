@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Art Part web application for art auction. Visit our website and get the best offers"
+    />
     <link rel="stylesheet" href="/dist/css/styles.css" />
-
     <title>Home Page</title>
   </head>
   <body>
     <div>
       <header
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0.5 border-bottom bg-primary shadow-lg"
+        id="top"
       >
         <a
           href="/"
@@ -19,26 +23,20 @@
         >
           <img
             src="/images/102747120_padded_logo.png"
-            alt=""
-            class="bi ms-3 logo rounded-pill m-1 p-2"
+            alt="logo"
+            class="bi logo rounded-pill p-2"
             role="img"
           />
         </a>
         <form class="d-flex" role="search">
           <input
-            class="form-control me-2 rounded-pill"
+            class="form-control me-2 rounded-pill searchBar"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button
-            class="btn btn-outline-primary rounded-pill ps-3 pe-3 pt-1 pb-1"
-            type="submit"
-          >
-            Search
-          </button>
         </form>
-        <div class="col-md-3 text-end navChange">
+        <div class="col-md-3 text-end navChange m-3">
           <a
             href="/profile/login/"
             class="btn btn-outline-primary me-2 rounded-pill ps-3 pe-3 pt-1 pb-1"
@@ -53,20 +51,20 @@
           </a>
         </div>
       </header>
-      <div
+      <!-- <div
         class="bg-light liner border border-primary border-top-0 bg-opacity-10"
-      ></div>
+      ></div> -->
     </div>
     <main>
       <img
         src="/images/StockSnap_IGHTJ9DY5E.jpg"
-        alt=""
+        alt="design image"
         srcset=""
         class="theme-img border border-dark"
       />
-      <section class="bg-primary text-light">
+      <section class="bg-primary text-light deleteMe">
         <div
-          class="d-flex text-start align-items-start flex-column mx-auto home-txt pt-5 pb-5 gap-3"
+          class="d-flex text-start align-items-start flex-column mx-auto home-txt pt-5 pb-5 gap-3 homeInfo"
         >
           <div class="text-uppercase fs-1">
             <span class="text-secondary">start an auction or</span>
@@ -92,24 +90,26 @@
         </div>
       </section>
 
-      <div class="d-flex justify-content-md-between momy text-light mt-2">
+      <div
+        class="d-flex justify-content-md-between momy text-light mt-2 deleteMe"
+      >
         <div class="look position-relative">
           <span class="position-absolute top-50 start-50 translate-middle fs-1"
             >LOOK</span
           >
-          <img src="/images/IMG_7722 ٢.JPG" alt="" class="style-img" />
+          <img src="/images/IMG_7722 ٢.JPG" alt="look" class="style-img" />
         </div>
         <div class="adore position-relative">
           <span class="position-absolute top-50 start-50 translate-middle fs-1"
             >ADORE
           </span>
-          <img src="/images/IMG_7723.JPG" alt="" class="style-img" />
+          <img src="/images/IMG_7723.JPG" alt="adore" class="style-img" />
         </div>
         <div class="merge position-relative">
           <span class="position-absolute top-50 start-50 translate-middle fs-1"
             >MERGE
           </span>
-          <img src="/images/IMG_7918.jpeg" alt="" class="style-img" />
+          <img src="/images/IMG_7918.jpeg" alt="merge" class="style-img" />
         </div>
       </div>
       <div class="d-flex flex-column text-center">
@@ -119,28 +119,31 @@
         </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-2 g-4 m-5 listings"></div>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 listings mx-auto mt-2"
+      ></div>
     </main>
 
     <div class="pt-4 pb-4 ps-2 pe-2 text-secondary rounded m-5">
-      <span class="bg-primary pt-4 pb-4 ps-2 pe-2 text-secondary rounded">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
-          fill="currentColor"
-          class="bi bi-chevron-double-up"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
-          />
-          <path
-            fill-rule="evenodd"
-            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          /></svg
-      ></span>
+      <a href="#top"
+        ><span class="bg-primary pt-4 pb-4 ps-2 pe-2 text-secondary rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-chevron-double-up"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            /></svg></span
+      ></a>
     </div>
 
     <footer
@@ -150,7 +153,7 @@
         <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
           <img
             src="/images/102747120_padded_logo.png"
-            alt=""
+            alt="logo"
             class="bi ms-3 logo rounded-pill m-1 p-2"
             role="img"
           />

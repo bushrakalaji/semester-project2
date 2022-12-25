@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ArtPart Web App for Art Auction look, Adore , merge and Bid"
+    />
     <link rel="stylesheet" href="/dist/css/styles.css" />
 
-    <title>Profile</title>
+    <title>Listing</title>
   </head>
   <body>
     <div>
@@ -14,43 +18,30 @@
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0.5 border-bottom bg-primary shadow-lg"
       >
         <a
-          href=""
+          href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
         >
           <img
             src="/images/102747120_padded_logo.png"
-            alt=""
+            ="logo"
             class="bi ms-3 logo rounded-pill m-1 p-2"
             role="img"
           />
         </a>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2 rounded-pill"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button
-            class="btn btn-outline-primary rounded-pill ps-3 pe-3 pt-1 pb-1"
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
+
         <div class="col-md-3 text-end">
-          <button
-            type="button"
+          <a
+            href="/"
             class="btn btn-outline-primary me-2 rounded-pill ps-3 pe-3 pt-1 pb-1"
           >
             Home
-          </button>
-          <button
-            type="button"
+          </a>
+          <a
+            href="/profile/"
             class="btn btn-outline-primary rounded-pill me-3 ps-3 pe-3 pt-1 pb-1"
           >
-            Logout
-          </button>
+            Profile
+          </a>
         </div>
       </header>
       <div
@@ -58,133 +49,25 @@
       ></div>
     </div>
     <main class="bg-primary">
-      <div class="bg-primary p-2">
-        <a href=""><span class="ms-2 text-light">Home |</span></a>
-        <a href=""><span class="text-secondary">Profile</span></a>
+      <div class="bg-primary p-2 postBreadCrumbs">
+        <a href="/" class="ms-2 text-light text-decoration-none">Home |</a>
       </div>
+      <div
+        class="bg-light liner border border-primary border-top-0 bg-opacity-10"
+      ></div>
       <div class="container">
-        <div class="listingID">
-          <!-- <div class="row container gap-3 mt-5">
-            <div class="col-sm-6 p-0">
-              <img
-                src="/images/IMG_7723.JPG"
-                alt=""
-                class="border-primary border lstng-img"
-              />
-            </div>
-            <div class="bg-primary text-light col-sm-5">
-              <div class="mb-5">
-                <h1>Listing Name</h1>
-                <span class="text-secondary">Ends At</span>
-              </div>
+        <div
+          class="row container gap-3 mt-5 listingID justify-content-center"
+        ></div>
+        <div class="row container gap-3 mt-5 text-light pb-5">
+          <h4 class="text-success mt-3 pt-3 border-top border-dark">
+            All Bidders
+          </h4>
 
-              <span class="text-success">CURRENT BID </span>
-              <div class="d-flex gap-2">
-                <span>15 </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-coin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
-                  />
-                  <path
-                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                  />
-                  <path
-                    d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
-                  />
-                </svg>
-              </div>
-              <div class="mt-5">
-                <h5>Bid</h5>
-                <form class="text-dark" id="bidForm">
-                  <div class="form-floating mb-3">
-                    <input
-                      type="number"
-                      name="amount"
-                      class="form-control"
-                      required
-                    />
-                    <label for="floatingInput" class="text-primary">Bid</label>
-                  </div>
-                  <div class="b-shadoww">
-                    <button
-                      class="w-100 btn btn-lg btn-outline-primary rounded-pill"
-                      type="submit"
-                    >
-                      Place bid
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div class="mt-5">
-                <h5>Bidder</h5>
-
-                <span>Last bidder name</span>
-                <div>
-                  <span>Amount : 15 </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-coin"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
-                    />
-                    <path
-                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                    />
-                    <path
-                      d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-primary text-light mt-5 d-flex justify-content-evenly align-items-start gap-3 p-5 flex-wrap"
-          >
-            <div class="mb-3 pt-5">
-              <h4 class="mb-3">Description</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
-            </div>
-            <div>
-              <h4 class="mb-3 pt-5">Seller</h4>
-              <div class="d-flex align-items-center gap-3">
-                <div
-                  class="seller-img text-light position-relative rounded-circle"
-                >
-                  <img
-                    src="https://raw.githubusercontent.com/bushrakalaji/semester-project2/main/images/IMG_7694.PNG"
-                    alt=""
-                    class="prfl-img border border-light rounded-circle"
-                  />
-                </div>
-                <div class="text-light fs-5 d-flex flex-column">
-                  <span>Name</span>
-                  <span>Email</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        --></div>
+          <ol class="list-group list-group-numbered bidders">
+            No bidders yet
+          </ol>
+        </div>
       </div>
     </main>
 
@@ -216,7 +99,7 @@
         <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
           <img
             src="/images/102747120_padded_logo.png"
-            alt=""
+            alt="logo"
             class="bi ms-3 logo rounded-pill m-1 p-2"
             role="img"
           />

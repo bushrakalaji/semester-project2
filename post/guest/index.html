@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ArtPart web app for art auction here you can see your listings and your credit"
+      content="Artpart Web Auctioneer App Create an account and start your auction"
     />
     <link rel="stylesheet" href="/dist/css/styles.css" />
-
-    <title>Profile</title>
+    <title>Listing</title>
   </head>
   <body>
     <div>
@@ -29,12 +28,19 @@
             role="img"
           />
         </a>
+
         <div class="col-md-3 text-end">
           <a
             href="/"
-            class="btn btn-outline-primary me-4 rounded-pill ps-3 pe-3 pt-1 pb-1"
+            class="btn btn-outline-primary me-2 rounded-pill ps-3 pe-3 pt-1 pb-1"
           >
             Home
+          </a>
+          <a
+            href="/profile/login/"
+            class="btn btn-outline-primary rounded-pill me-3 ps-3 pe-3 pt-1 pb-1"
+          >
+            Login
           </a>
         </div>
       </header>
@@ -42,55 +48,45 @@
         class="bg-light liner border border-primary border-top-0 bg-opacity-10"
       ></div>
     </div>
-    <main>
-      <div class="bg-primary text-light p-2">
-        <a href="/" class="ms-2 text-decoration-none text-light">Home |</a>
-        <a href="/profile/" class="text-secondary">Profile</a>
+    <main class="bg-primary">
+      <div class="bg-primary p-2 veiwBreadCrumbs">
+        <a href="/" class="ms-2 text-light text-decoration-none">Home |</a>
       </div>
-      <img
-        src="/images/StockSnap_IGHTJ9DY5E.jpg"
-        alt="design image"
-        srcset=""
-        class="theme-img border border-dark theme-image"
-      />
-      <div class="bg-primary p-4">
-        <div class="myProfile"></div>
-        <div class="d-flex justify-content-center b-shadoww mt-5">
-          <a
-            href="/post/create/"
-            class="btn btn-outline-primary rounded-pill ps-4 pe-4 pt-2 pb-2"
-          >
-            Create listing
-          </a>
+      <div class="container">
+        <div class="row container gap-3 mt-5 veiwListingID"></div>
+        <div class="row container gap-3 mt-5 text-light pb-5">
+          <h4 class="text-success border-top mt-3 pt-3 border-dark">
+            All Bidders
+          </h4>
+
+          <ol class="list-group list-group-numbered bidders">
+            No bidders yet
+          </ol>
         </div>
       </div>
-
-      <div class="fs-1 text-light bg-primary fw-light p-3 text-center mt-1">
-        My listings
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 m-1 profileListing"></div>
     </main>
 
-    <div class="pb-4 ps-2 pe-2 text-secondary rounded m-5">
-      <a href="#top">
-        <span class="bg-primary pt-4 pb-4 ps-2 pe-2 text-secondary rounded">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="currentColor"
-            class="bi bi-chevron-double-up"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-            /></svg></span
+    <div class="pt-4 pb-4 ps-2 pe-2 text-secondary rounded m-5">
+      <a
+        href="#top"
+        class="bg-primary pt-4 pb-4 ps-2 pe-2 text-secondary rounded"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="currentColor"
+          class="bi bi-chevron-double-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+          /></svg
       ></a>
     </div>
 
@@ -159,6 +155,6 @@
         </li>
       </ul>
     </footer>
-    <script src="/src/js/index.mjs" type="module"></script>
+    <script src="../../src/js/index.mjs" type="module"></script>
   </body>
 </html>

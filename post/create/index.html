@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ArtPart web app for art auction Create a post now"
+    />
     <link rel="stylesheet" href="/dist/css/styles.css" />
 
     <title>Create Listing</title>
@@ -12,7 +16,7 @@
     <main>
       <img
         src="/images/StockSnap_IGHTJ9DY5E.jpg"
-        alt=""
+        alt="design image"
         srcset=""
         class="theme-img border border-dark theme-image"
       />
@@ -58,12 +62,18 @@
                 <label for="floatingInput">Ends At</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" name="tags" class="form-control" />
+                <input
+                  type="text"
+                  name="tags"
+                  class="form-control"
+                  pattern="\bart\b"
+                  title="use 'art' tag to create your listing"
+                />
                 <label for="floatingInput">Tags</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="url" name="media" class="form-control" />
                 <label for="floatingInput">Media</label>
+                <input type="url" name="media" class="form-control" required />
               </div>
               <div class="d-flex gap-3">
                 <a
