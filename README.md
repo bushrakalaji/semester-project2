@@ -21,8 +21,8 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/bushrakalaji/semester-project2.git`
 2. Navigate to the project directory: `cd semester-project2`
-3. Install the dependencies: `npm install` or `yarn install`
-4. Start the development server: `npm run start` or `yarn start`
+3. Install the dependencies: `npm install` 
+4. Start the development server: `npm run start` 
 
 ## Contributing
 
