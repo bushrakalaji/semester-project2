@@ -28,7 +28,7 @@ When a new user joins the website, they are given 1000 credits to use on the sit
 - CSS
 - Bootstrap
 
-### Prerequisites
+## Prerequisites
 
 - Node.js
 - npm (comes with Node.js)
