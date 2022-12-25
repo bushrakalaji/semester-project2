@@ -14,6 +14,14 @@ export async function register(profile) {
     body,
   });
   const result = await response.json();
-  alert("you are now registerd");
-  return result;
+
+  if (response.ok) {
+    alert("you are now registerd");
+    window.location.replace("/profile/login/");
+    return result;
+  } else {
+    alert(
+      "The email or name is not available. Please try again with a different name or email"
+    );
+  }
 }

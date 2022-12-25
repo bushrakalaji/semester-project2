@@ -16,7 +16,11 @@ export async function login(profile) {
   });
   const { accessToken, ...user } = await response.json();
 
-  storage.save("token", accessToken);
-  storage.save("profile", user);
-  alert("you are now logged in");
+  if (response.ok) {
+    storage.save("token", accessToken);
+    storage.save("profile", user);
+    window.location.replace("/");
+  } else {
+    alert("Make sure that the email or password is correct");
+  }
 }

@@ -9,11 +9,14 @@ export async function updateListing(listingData) {
     throw new Error("Update requires a listing ID");
   }
   listingData.tags = listingData.tags.split(" ");
+  listingData.media = listingData.media.split(" ");
   const updateListingURL = `${API_AUCTION_URL}${action}/${listingData.id}`;
 
   const response = await authFetch(updateListingURL, {
     method,
     body: JSON.stringify(listingData),
   });
+  alert("Listing updated");
+  window.location.replace("/profile/");
   return await response.json();
 }

@@ -2,9 +2,9 @@ import { getListing, updateListing } from "../api/listings/index.mjs";
 
 export async function setUpdateFormListener() {
   const form = document.querySelector("#updateListing");
-  const url = new URL(location.href);
-  new URLSearchParams();
-  const id = url.searchParams.get("id");
+  const queryString = document.location.search;
+  const params = new URLSearchParams(queryString);
+  const id = params.get("id");
   if (form) {
     const listing = await getListing(id);
 

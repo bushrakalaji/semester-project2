@@ -2,7 +2,7 @@ import { authFetch } from "../authFetch.mjs";
 import { API_AUCTION_URL } from "../constans.mjs";
 
 const action = "/listings";
-const myTag = "?_tag=car";
+const myTag = "?_tag=art";
 export async function getListings() {
   const getListingsURL = `${API_AUCTION_URL}${action}${myTag}`;
   const response = await authFetch(getListingsURL);

@@ -6,6 +6,8 @@ const bids = "bids";
 const method = "post";
 
 export async function listingBid(id, amount) {
+  const displayError = document.querySelector("#liveAlertPlaceholder");
+
   const bidURL = `${API_AUCTION_URL}${action}/${id}/${bids}?_seller=true&_bids=true`;
 
   const response = await authFetch(bidURL, {
@@ -14,5 +16,10 @@ export async function listingBid(id, amount) {
   });
   const result = await response.json();
   console.log(result);
-  return result;
+  if (response.ok) {
+    window.location.reload();
+    return result;
+  } else {
+    throw new Error((displayError.innerHTML = result.errors[0].message));
+  }
 }

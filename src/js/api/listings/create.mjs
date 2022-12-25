@@ -13,5 +13,8 @@ export async function createListing(listingData) {
     method,
     body: JSON.stringify(listingData),
   });
+
+  alert("Listing created");
+  window.location.replace("/profile/");
   return await response.json();
 }
