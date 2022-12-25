@@ -2,7 +2,7 @@ import { API_AUCTION_URL } from "../api/constans.mjs";
 import { authFetch } from "../api/authFetch.mjs";
 import { bidFormListener } from "../handlers/bid.mjs";
 import { mydateString } from "../handlers/time.mjs";
-import { load } from "../storage/index.mjs";
+import { errorHandler } from "../handlers/errorHandler.mjs";
 /**
  * This function displays a specific listing information for unregisterd users.
  */
@@ -143,5 +143,9 @@ export async function veiwlistingById() {
         `;
     }
     veiwCrumbs();
-  } catch {}
+  } catch (error) {
+    resultById.innerHTML += errorHandler(
+      "An error occurred when calling the API"
+    );
+  }
 }

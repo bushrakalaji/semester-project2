@@ -1,5 +1,6 @@
 import { API_AUCTION_URL } from "../api/constans.mjs";
 import { authFetch } from "../api/authFetch.mjs";
+import { errorHandler } from "../handlers/errorHandler.mjs";
 /**
  *  This function displays a list of bidders for a specific listing .
  */
@@ -48,5 +49,7 @@ export async function biddersList() {
       
       `;
     });
-  } catch {}
+  } catch (error) {
+    bidders.innerHTML += errorHandler("An error occurred when calling the API");
+  }
 }
