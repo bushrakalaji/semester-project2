@@ -53,14 +53,14 @@ export async function listingsTemplate() {
       // sets the src and alt attributes of an image element based on the media property of the singleResult object
 
       let image = `<img src="https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg
-      "class="card-img-top crd-img-hover imgSize"
+      "class="card-img-top imgSize"
       alt="${listing.title}"/> `;
 
       if (listing.media[0]) {
         image = `<img
         src="${listing.media}"
         onerror = "src='https://raw.githubusercontent.com/bushrakalaji/semester-project2/d7b5da7e9484a2d08218ca79c550dd7e3323a3c0/images/placeholder.jpg'"
-        class="card-img-top crd-img-hover imgSize"
+        class="card-img-top imgSize"
         alt="${listing.title}"
       />`;
       }
