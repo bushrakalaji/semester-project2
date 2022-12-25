@@ -147,17 +147,6 @@ export async function listingsTemplate() {
         `;
     }
 
-    // function veiwButton() {
-
-    //     goButton.innerHTML = `
-
-    //     <a href="${myLink}"  class="btn btn-outline-primary me-2 rounded-pill ps-3 pe-3 pt-1 pb-1">
-    //     Go Now!
-    //    </a>
-
-    //     `
-
-    // }
   } catch (error) {
     container.innerHTML += errorHandler(
       "An error occurred when calling the API"
