@@ -52,10 +52,13 @@ body {
 }
 
 .profile-img {
-  max-width: 250px;
+  width: 250px;
+  height: 250px;
+  
 }
 .prfl-img {
   width: 100%;
+  height: 100%;
 }
 
 .listing-img {
@@ -65,14 +68,39 @@ body {
   width: 100%;
 }
 
+.sellerImg{
+  width: 150px;
+  height: 150px;
+}
+
 .listing-width {
   max-width: calc(100% / 2);
 }
 
 p {
   max-width: 500px;
+  overflow-wrap: break-word;
 }
 .seller-img {
   max-width: 150px;
+}
+.pWidth{
+  overflow-wrap: break-word;
+}
+
+.imgSize{
+width: 100%;
+}
+
+.imgDiv{
+height: 300px ;
+overflow: hidden;
+}
+
+.help{
+  display: none;
+}
+input:invalid + .help {
+display: block;
 }
 
